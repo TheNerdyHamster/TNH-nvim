@@ -8,6 +8,7 @@ source $HOME/.config/nvim/plug-config/coc.vim
 
 " Theme
 source $HOME/.config/nvim/themes/onedark.vim
-
+" Airline
+source $HOME/.config/nvim/themes/airline.vim
 " Tools
 source $HOME/.config/nvim/plug-config/ansible.vim
