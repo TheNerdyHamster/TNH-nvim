@@ -12,6 +12,7 @@ set cmdheight=2                         " More space for displaying messages
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 set mouse=a                             " Enable your mouse
 set ignorecase                          " Case insensitive matching
+set spelllang=en_us
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
