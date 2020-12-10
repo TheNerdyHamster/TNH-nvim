@@ -13,6 +13,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Themes
     Plug 'joshdick/onedark.vim'
+    " COC 
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Encryption
     Plug 'jamessan/vim-gnupg'
     " Ansible
