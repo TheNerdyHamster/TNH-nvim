@@ -8,8 +8,12 @@ source $HOME/.config/nvim/plug-config/coc.vim
 
 " Theme
 source $HOME/.config/nvim/themes/onedark.vim
+
 " Airline
 source $HOME/.config/nvim/themes/airline.vim
+
+" Utils
+source $HOME/.config/nvim/plug-config/start-screen.vim
 
 " Color utils
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
