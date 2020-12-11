@@ -20,6 +20,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Ranger
     Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+    " FZF
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    Plug 'airblade/vim-rooter'
+    " Commentary
+    Plug 'tpope/vim-commentary'
+    " Color Utils
+    Plug 'norcalli/nvim-colorizer.lua'
+    Plug 'junegunn/rainbow_parentheses.vim'
     " Encryption
     Plug 'jamessan/vim-gnupg'
     " Ansible
