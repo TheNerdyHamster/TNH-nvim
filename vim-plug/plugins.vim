@@ -18,6 +18,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline-themes'
     " COC 
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Ranger
+    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
     " Encryption
     Plug 'jamessan/vim-gnupg'
     " Ansible
