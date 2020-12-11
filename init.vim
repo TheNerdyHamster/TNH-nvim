@@ -12,3 +12,4 @@ source $HOME/.config/nvim/themes/onedark.vim
 source $HOME/.config/nvim/themes/airline.vim
 " Tools
 source $HOME/.config/nvim/plug-config/ansible.vim
+source $HOME/.config/nvim/plug-config/rnvimr.vim
