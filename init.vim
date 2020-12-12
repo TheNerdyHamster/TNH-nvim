@@ -19,6 +19,9 @@ source $HOME/.config/nvim/plug-config/start-screen.vim
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 source $HOME/.config/nvim/plug-config/rainbow_parentheses.vim
 
+"Git
+source $HOME/.config/nvim/plug-config/signify.vim
+
 " Tools
 source $HOME/.config/nvim/plug-config/ansible.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
