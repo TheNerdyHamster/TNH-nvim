@@ -31,6 +31,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Color Utils
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'junegunn/rainbow_parentheses.vim'
+    " Git
+    Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'junegunn/gv.vim'
     " Encryption
     Plug 'jamessan/vim-gnupg'
     " Ansible
