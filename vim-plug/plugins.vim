@@ -7,6 +7,8 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    " Which-key
+    Plug 'liuchengxu/vim-which-key'
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " Auto pairs for '(' '[' '{'
@@ -36,6 +38,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
+    "Async task
+    Plug 'skywind3000/asynctasks.vim'
+    Plug 'skywind3000/asyncrun.vim'
+    " Find & Replace
+    Plug 'ChristianChiarulli/far.vim'
+    " Terminal
+    Plug 'voldikss/vim-floaterm'
+    " Snippets
+    Plug 'honza/vim-snippets'
     " Sneak
     Plug 'justinmk/vim-sneak'
     " Encryption
