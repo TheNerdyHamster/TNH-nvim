@@ -37,3 +37,76 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+"""""""""""""""""""""
+""    Which-Key    ""
+"""""""""""""""""""""
+
+let @s = 'veS"'
+
+" Timeout
+let g:which_key_timeout = 100
+
+let g:which_key_display_names = {'<CR>': '↵', '<TAB>': '⇆'}
+
+" Map leader to which_key
+nnoremap <silent> <leader> :silent WhichKey '<Space>'<CR>
+vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
+
+" Create map to add keys to
+let g:which_key_map =  {}
+" Define a separator
+let g:which_key_sep = '→'
+
+" Not a fan of floating windows for this
+let g:which_key_use_floating_win = 0
+
+highlight default link WhichKey          Operator
+highlight default link WhichKeySeperator DiffAdded
+highlight default link WhichKeyGroup     Identifier
+highlight default link WhichKeyDesc      Function
+
+" Hide status line
+autocmd! FileType which_key
+autocmd  FileType which_key set laststatus=0 noshowmode noruler
+  \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
+
+" Single mappings
+let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'comment' ]
+let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'explorer' ]
+let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
+let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
+let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
+
+" +coc mappings
+let g:which_key_map.c = {
+    \ 'name' : '+coc' ,
+    \ 'a' : [':CocList diagnostics'                       , 'diagnostics'],
+    \ 'c' : [':CocList commands'                          , 'commands'],
+    \ 'e' : [':CocList extensions'                        , 'extensions'],
+    \ 'm' : [':CocList marketplace'                       , 'marketplace'],
+    \ 'o' : [':CocList outline'                           , 'outline'],
+    \ 'p' : [':CocListResume'                             , 'resume'],
+    \ 's' : [':CocList -I symbols'                        , 'symbols'],
+  \ }
+
+" +lsp mappings
+let g:which_key_map.l = {
+    \ 'name' : '+lsp' ,
+    \ '.' : [':CocConfig'                       , 'config'],
+    \ 'a' : ['<Plug>(coc-codeaction)'           , 'code action'],
+    \ 'A' : ['<Plug>(coc-codeaction-selected)'  , 'selected action'],
+    \ 'b' : [':CocNext'                         , 'next action'],
+    \ 'B' : [':CocPrev'                         , 'prev action'],
+    \ 'l' : ['<Plug>(coc-codelens-action)'      , 'code lens'],
+    \ 'q' : ['<Plug>(coc-fix-current)'          , 'quickfix'],
+    \ 'r' : ['<Plug>(coc-rename)'               , 'rename'],
+  \ } 
+
+
+
+
+
+
+" Register which key map
+call which_key#register('<Space>', "g:which_key_map")
