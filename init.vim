@@ -32,3 +32,6 @@ source $HOME/.config/nvim/plug-config/sneak.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
 source $HOME/.config/nvim/plug-config/find_replace.vim
 source $HOME/.config/nvim/plug-config/asynctask.vim
+
+" Languages/Syntax
+source $HOME/.config/nvim/lang/svelte.vim
