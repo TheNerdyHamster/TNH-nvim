@@ -45,6 +45,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ChristianChiarulli/far.vim'
     " Terminal
     Plug 'voldikss/vim-floaterm'
+    " Languages
+    Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+    " Syntax
+    Plug 'leafOfTree/vim-svelte-plugin'
     " Snippets
     Plug 'honza/vim-snippets'
     " Sneak
