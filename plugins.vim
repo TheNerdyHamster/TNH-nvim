@@ -22,4 +22,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Mappings
     Plug 'liuchengxu/vim-which-key'
+    " Utils
+    Plug 'wakatime/vim-wakatime'
 call plug#end()
