@@ -74,8 +74,9 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 " Single mappings
 let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'comment' ]
 let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'explorer' ]
-let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
+let g:which_key_map['b'] = [ '<C-W>s'                     , 'split below']
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
+let g:which_key_map['r'] = [ ':source $MYWIMRC'           , 'Reload config']
 let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
 
 " +coc mappings
@@ -103,6 +104,29 @@ let g:which_key_map.l = {
     \ 'r' : ['<Plug>(coc-rename)'               , 'rename'],
   \ } 
 
+let g:which_key_map.w = {
+    \ 'name' : '+wiki',
+    \ ' ' : {
+        \ 'name' : '+diary',
+        \ 'i' : 'Update diary',
+        \ 'm' : 'Make diary for tommrow',
+        \ 't' : 'Open diary in new tab',
+        \ 'w' : 'Make diary for today',
+        \ 'y' : 'Make diary for yeasterday',
+    \     },
+    \ 'd' : 'delete wiki',
+    \ 'i' : 'Open diary of current wiki',
+    \ 'l' : {
+        \ 'name' : '+links',
+        \ 'l' : 'follow link',
+        \ 'n' : 'next link',
+        \ 'p' : 'prev link',
+    \     },
+    \ 'r' : 'rename wiki',
+    \ 's' : 'search & open wiki',
+    \ 't' : 'open default wiki in new tab',
+    \ 'w' : 'open default wiki',
+  \ }
 
 
 
