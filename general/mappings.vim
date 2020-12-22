@@ -38,6 +38,21 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+
+"""""""""""
+""  Git  ""
+"""""""""""
+nnoremap <silent> <leader>gb :Gblame<CR>
+nnoremap <silent> <leader>gB :Gbrowse<CR>
+nnoremap <silent> <leader>gd :Gdiff<CR>
+nnoremap <silent> <leader>gs :G<CR>
+nnoremap <silent> <leader>gc :Gcommit<CR>
+nnoremap <silent> <leader>gp :Gpush<CR>
+nnoremap <silent> <leader>gf :Gfetch<CR>
+
+" nnoremap <silent> <leader>gh :diffget //3<CR>
+" nnoremap <silent> <leader>gu :diffget //2<CR>
+
 """""""""""""""""
 ""  Which-Key  ""
 """""""""""""""""
@@ -91,6 +106,18 @@ let g:which_key_map.c = {
     \ 's' : [':CocList -I symbols'                        , 'symbols'],
   \ }
 
+" +git mappings
+
+let g:which_key_map.g = {
+    \ 'name' : '+git',
+    \ 'b': 'blame',
+    \ 'B': 'browse',
+    \ 'd': 'diff',
+    \ 's': 'status',
+    \ 'c': 'commit',
+    \ 'p': 'push', 
+    \ 'f': 'fetch',
+  \ }
 " +lsp mappings
 let g:which_key_map.l = {
     \ 'name' : '+lsp' ,

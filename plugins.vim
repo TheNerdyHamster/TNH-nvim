@@ -28,4 +28,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mattn/calendar-vim'
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'tpope/vim-commentary'
+    " Tools
+    Plug 'tpope/vim-fugitive'
 call plug#end()
