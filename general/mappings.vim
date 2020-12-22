@@ -1,6 +1,6 @@
-"""""""""""""""""""""
-""     General     ""
-"""""""""""""""""""""
+"""""""""""""""
+""  General  ""
+"""""""""""""""
 
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
@@ -38,9 +38,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-"""""""""""""""""""""
-""    Which-Key    ""
-"""""""""""""""""""""
+"""""""""""""""""
+""  Which-Key  ""
+"""""""""""""""""
 
 let @s = 'veS"'
 
@@ -72,7 +72,7 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
 " Single mappings
-let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'comment' ]
+let g:which_key_map['/'] = [ '<Plug>Commentary'  , 'comment' ]
 let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'explorer' ]
 let g:which_key_map['b'] = [ '<C-W>s'                     , 'split below']
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']

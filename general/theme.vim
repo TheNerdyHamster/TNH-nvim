@@ -1,6 +1,6 @@
-"""""""""""""""""""""
-""     onedark     ""
-"""""""""""""""""""""
+"""""""""""""""
+""  onedark  ""
+"""""""""""""""
 
 if (has("autocmd") && !has("gui_running"))
   augroup colorset
@@ -25,9 +25,9 @@ if (has("termguicolors"))
     hi LineNr ctermbg=NONE guibg=NONE
 endif
 
-"""""""""""""""""""""
-""     Airline     ""
-"""""""""""""""""""""
+"""""""""""""""
+""  Airline  ""
+"""""""""""""""
 
 " enable tabline
 let g:airline#extensions#tabline#enabled = 1

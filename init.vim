@@ -10,3 +10,4 @@ source $HOME/.config/nvim/general/completion.vim
 
 " Utils
 source $HOME/.config/nvim/general/config.vim
+luafile $HOME/.config/nvim/general/config.lua
