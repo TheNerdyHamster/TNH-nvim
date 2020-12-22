@@ -1,6 +1,6 @@
-"""""""""""""""""""""
-""     VimPlug     ""
-"""""""""""""""""""""
+""""""""""""""
+""  VimPlug  ""
+"""""""""""""""
 
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
@@ -26,4 +26,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'wakatime/vim-wakatime'
     Plug 'vimwiki/vimwiki'
     Plug 'mattn/calendar-vim'
+    Plug 'norcalli/nvim-colorizer.lua'
+    Plug 'tpope/vim-commentary'
 call plug#end()

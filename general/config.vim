@@ -1,6 +1,6 @@
-"""""""""""""""""""""
-""     VimWiki     ""
-"""""""""""""""""""""
+"""""""""""""""
+""  VimWiki  ""
+"""""""""""""""
 nmap <leader>wll <Plug>VimwikiFollowLink
 nmap <leader>wln <Plug>VimwikiNextLink
 nmap <leader>wlp <Plug>VimwikiPrevLink

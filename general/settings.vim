@@ -1,6 +1,6 @@
-"""""""""""""""""""""
-""    Setttings    ""
-"""""""""""""""""""""
+"""""""""""""""""
+""  Setttings  ""
+"""""""""""""""""
 
 syntax on                               " Enables syntax highlighing
 filetype plugin indent on               " Allow auto-indenting depending on file type
