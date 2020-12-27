@@ -53,6 +53,15 @@ nnoremap <silent> <leader>gf :Gfetch<CR>
 " nnoremap <silent> <leader>gh :diffget //3<CR>
 " nnoremap <silent> <leader>gu :diffget //2<CR>
 
+
+
+"""""""""""""""
+""  Project  ""
+"""""""""""""""
+
+nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 25<CR>
+nnoremap <leader>ps :Rg<SPACE>
+
 """""""""""""""""
 ""  Which-Key  ""
 """""""""""""""""
@@ -129,7 +138,13 @@ let g:which_key_map.l = {
     \ 'l' : ['<Plug>(coc-codelens-action)'      , 'code lens'],
     \ 'q' : ['<Plug>(coc-fix-current)'          , 'quickfix'],
     \ 'r' : ['<Plug>(coc-rename)'               , 'rename'],
-  \ } 
+  \ }"
+
+let g:which_key_map.p = {
+  \ 'name' : '+project',
+  \ 'v' : 'Explorer',
+  \ 's' : 'Project search'
+  \ }
 
 let g:which_key_map.w = {
     \ 'name' : '+wiki',
