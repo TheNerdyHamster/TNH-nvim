@@ -1,37 +1,13 @@
-" General settings for NeoVim
-source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/plugins.vim
 source $HOME/.config/nvim/general/settings.vim
-source $HOME/.config/nvim/keys/mappings.vim
-source $HOME/.config/nvim/keys/which-key.vim
-
-" coc
-source $HOME/.config/nvim/plug-config/coc.vim
+source $HOME/.config/nvim/general/mappings.vim
 
 " Theme
-source $HOME/.config/nvim/themes/onedark.vim
+source $HOME/.config/nvim/general/theme.vim
 
-" Airline
-source $HOME/.config/nvim/themes/airline.vim
+" Completion
+source $HOME/.config/nvim/general/completion.vim
 
 " Utils
-source $HOME/.config/nvim/plug-config/start-screen.vim
-
-" Color utils
-luafile $HOME/.config/nvim/lua/plug-colorizer.lua
-source $HOME/.config/nvim/plug-config/rainbow_parentheses.vim
-
-"Git
-source $HOME/.config/nvim/plug-config/signify.vim
-
-" Tools
-source $HOME/.config/nvim/plug-config/ansible.vim
-source $HOME/.config/nvim/plug-config/rnvimr.vim
-source $HOME/.config/nvim/plug-config/fzf.vim
-source $HOME/.config/nvim/plug-config/commentary.vim
-source $HOME/.config/nvim/plug-config/sneak.vim
-source $HOME/.config/nvim/plug-config/floaterm.vim
-source $HOME/.config/nvim/plug-config/find_replace.vim
-source $HOME/.config/nvim/plug-config/asynctask.vim
-
-" Languages/Syntax
-source $HOME/.config/nvim/lang/svelte.vim
+source $HOME/.config/nvim/general/config.vim
+luafile $HOME/.config/nvim/general/config.lua
