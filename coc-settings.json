@@ -7,7 +7,8 @@
     "html",
     "yaml",
     "json",
-    "python"
+    "python",
+    "go"
   ],
   // python config
   "python.linting.enabled": true,
@@ -15,22 +16,5 @@
   "snippets.ultisnips.directories": [
     "UltiSnips",
     "~/.config/nvim/utils/snips"
-  ],
-  // explorer
-  "explorer.width": 30,
-  "explorer.icon.enableNerdfont": true,
-  "explorer.previewAction.onHover": false,
-  "explorer.keyMappings.global": {
-    "<cr>": [
-      "expandable?",
-      "expand",
-      "open"
-    ],
-    "v": "open:vsplit"
-  },
-  "coc.source.emoji.filetypes": [
-    "markdown",
-    "vim",
-    "json"
   ]
 }
