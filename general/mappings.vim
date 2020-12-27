@@ -124,12 +124,12 @@ let g:which_key_map.g = {
     \ 'd': 'diff',
     \ 's': 'status',
     \ 'c': 'commit',
-    \ 'p': 'push', 
+    \ 'p': 'push',
     \ 'f': 'fetch',
   \ }
 " +lsp mappings
 let g:which_key_map.l = {
-    \ 'name' : '+lsp' ,
+    \ 'name' : '+lsp',
     \ '.' : [':CocConfig'                       , 'config'],
     \ 'a' : ['<Plug>(coc-codeaction)'           , 'code action'],
     \ 'A' : ['<Plug>(coc-codeaction-selected)'  , 'selected action'],
