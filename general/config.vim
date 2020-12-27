@@ -23,4 +23,21 @@ function! ToggleCalendar()
   end
 endfunction
 
-:autocmd FileType vimwiki map c :call ToggleCalendar()
+autocmd FileType vimwiki map c :call ToggleCalendar()
+
+""""""""""
+""  RG  ""
+""""""""""
+
+if executable('rg')
+  let g:rg_derive_root = 'true'
+endif
+
+"""""""""""""
+""  Netrw  ""
+"""""""""""""
+
+let g:netrw_browse_split = 2
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+let g:netrw_winsize = 25
