@@ -26,8 +26,8 @@ let g:syntastic_cpp_cpplint_exec = 'cpplint'
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-autocmd FileType c nmap <leader>pb  :<C-u>make run<CR>
-autocmd FileType c nmap <leader>pr  :<C-u>make build<CR>
+autocmd FileType c nmap <leader>pr  :<C-u>make run<CR>
+autocmd FileType c nmap <leader>pb  :<C-u>make build<CR>
 autocmd FileType c nmap <leader>pt  :<C-u>make test<CR>
 autocmd FileType c nmap <leader>pT  :<C-u>make test<CR>
 autocmd FileType c nmap <leader>pf  :<C-u>ClangFormat<CR>
