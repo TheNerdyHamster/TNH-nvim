@@ -22,6 +22,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ryanoasis/vim-devicons'
     " Languages
     Plug 'fatih/vim-go'
+    Plug 'jackguo380/vim-lsp-cxx-highlight'
+    Plug 'vim-syntastic/syntastic'
+    Plug 'rhysd/vim-clang-format'
     " Coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Mappings
