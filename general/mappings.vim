@@ -59,13 +59,21 @@ nnoremap <silent> <leader>gf :Gfetch<CR>
 " nnoremap <silent> <leader>gh :diffget //3<CR>
 " nnoremap <silent> <leader>gu :diffget //2<CR>
 
+""""""""""""""
+"" NERDTree ""
+""""""""""""""
+
+nnoremap <leader>e :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 
 """""""""""""""
 ""  Project  ""
 """""""""""""""
 
-nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 25<CR>
+nnoremap <leader>pv :NERDTreeToggle<CR>
 nnoremap <leader>ps :Rg<SPACE>
 
 """""""""""""""""
@@ -104,6 +112,7 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 " Single mappings
 let g:which_key_map['/'] = [ '<Plug>Commentary'  , 'comment' ]
 let g:which_key_map['b'] = [ '<C-W>s'                     , 'split below']
+let g:which_key_map['e'] = 'Focus Explorer'
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 let g:which_key_map['r'] = [ ':source $MYWIMRC'           , 'Reload config']
 let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
@@ -148,8 +157,8 @@ let g:which_key_map.l = {
 
 let g:which_key_map.p = {
   \ 'name' : '+project',
-  \ 'v' : 'Explorer',
-  \ 's' : 'Project search'
+  \ 'v' : 'explorer',
+  \ 's' : 'search'
   \ }
 
 let g:which_key_map.w = {

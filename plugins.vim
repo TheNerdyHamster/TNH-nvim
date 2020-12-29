@@ -34,4 +34,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mbbill/undotree'
     " Tools
     Plug 'tpope/vim-fugitive'
+    Plug 'preservim/nerdtree'
 call plug#end()
