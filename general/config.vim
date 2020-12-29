@@ -23,7 +23,7 @@ function! ToggleCalendar()
   end
 endfunction
 
-autocmd FileType vimwiki map c :call ToggleCalendar()
+autocmd FileType vimwiki nmap <leader>wc :call ToggleCalendar()
 
 """"""""""
 ""  RG  ""
@@ -33,67 +33,14 @@ if executable('rg')
   let g:rg_derive_root = 'true'
 endif
 
-"""""""""""""
-""  Netrw  ""
-"""""""""""""
+"""""""""""""""
+"" NERDTree  ""
+"""""""""""""""
 
-let g:netrw_browse_split = 4
-let g:netrw_liststyle = 3
-let g:netrw_banner = 0
-let g:netrw_winsize = 25
+" Start NERDTree, unless a file or session is specified, eg. vim -S session_file.vim.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') && v:this_session == '' | NERDTree | endif
 
-function! OpenToRight()
-  :normal v
-  let g:path=expand('%:p')
-  :q!
-  execute 'belowright vnew' g:path
-  :normal <C-l>
-endfunction
-
-function! OpenBelow()
-  :normal v
-  let g:path=expand('%:p')
-  :q!
-  execute 'belowright new' g:path
-  :normal <C-l>
-endfunction
-
-function! NetrwMappings()
-  noremap <buffer> <C-l> <C-w>l
-  noremap <silent> <C-f> :call ToggleNetrw()<CR>
-  noremap <buffer> V :call OpenToRight()<CR>
-  noremap <buffer> H :call OpenBelow()<CR>
-endfunction
-
-augroup netrw_mappings
-  autocmd!
-  autocmd filetype netrw call NetrwMappings()
-augroup END
-
-" Function to toggle Netrw
-function! ToggleNetrw()
-  if g:NetrwIsOpen
-    let i = bufnr("$")
-    while (i >= 1)
-      if (getbufvar(i, "&filetype") == "netrw")
-        silent exe "bwipeout" . i
-      endif
-      let i-=1
-    endwhile
-    let g:NetrwIsOpen=0
-  else
-    let g:NetrwIsOpen=1
-    silent Lexplore
-  endif
-endfunction
-
-" Close netrw when its the only buffer
-autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw" || &buftype == 'quickfix' |q|endif
-
-" Let Netrw act as a project drawer
-augroup ProjectDrawer
-  autocmd!
-  autocmd VimEnter * :call ToggleNetrw()
-augroup END
-
-let g:NetrwIsOpen=0
+" Exit if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
