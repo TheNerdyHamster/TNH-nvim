@@ -5,6 +5,8 @@ source $HOME/.config/nvim/general/mappings.vim
 " Theme
 source $HOME/.config/nvim/general/theme.vim
 
+" Lang
+source $HOME/.config/nvim/general/lang.vim
 " Completion
 source $HOME/.config/nvim/general/completion.vim
 
