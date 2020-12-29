@@ -20,6 +20,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
+    " Languages
+    Plug 'fatih/vim-go'
     " Coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Mappings
