@@ -157,6 +157,11 @@ let g:which_key_map.l = {
 
 let g:which_key_map.p = {
   \ 'name' : '+project',
+  \ 'b' : 'build',
+  \ 'f' : 'format',
+  \ 'r' : 'run',
+  \ 't' : 'test func',
+  \ 'T' : 'test all',
   \ 'v' : 'explorer',
   \ 's' : 'search'
   \ }

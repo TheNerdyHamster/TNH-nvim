@@ -37,6 +37,7 @@ set termguicolors
 set noswapfile
 set incsearch
 set background=dark                     " tell vim what the background color looks like
+set autowrite
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 autocmd BufWritePre * %s/\s\+$//e       " Remove tralning spaces on save
