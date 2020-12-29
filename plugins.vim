@@ -15,10 +15,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     " Themes
-    Plug 'joshdick/onedark.vim'
     Plug 'morhetz/gruvbox'
+    Plug 'cocopon/iceberg.vim'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    Plug 'ryanoasis/vim-devicons'
     " Coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Mappings
