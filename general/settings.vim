@@ -36,7 +36,7 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set termguicolors
 set noswapfile
 set incsearch
-set background=dark                     " tell vim what the background color looks like
+set background=light                     " tell vim what the background color looks like
 set autowrite
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC

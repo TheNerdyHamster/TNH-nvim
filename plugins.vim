@@ -15,8 +15,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     " Themes
-    Plug 'morhetz/gruvbox'
-    Plug 'cocopon/iceberg.vim'
+    Plug 'NLKNguyen/papercolor-theme'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
@@ -25,6 +24,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jackguo380/vim-lsp-cxx-highlight'
     Plug 'vim-syntastic/syntastic'
     Plug 'rhysd/vim-clang-format'
+    Plug 'posva/vim-vue'
     " Coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Mappings
