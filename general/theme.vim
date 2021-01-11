@@ -1,35 +1,10 @@
-""""""""""""""""
-"" PaperColor ""
-""""""""""""""""
-
-set t_Co=256
+"""""""""""""""
+"" Solarized ""
+"""""""""""""""
 
 set background=light
-colorscheme PaperColor
+colorscheme NeoSolarized
 
-let g:PaperColor_Theme_Options = {
-  \   'theme': {
-  \     'default.light': {
-  \       'override' : {
-  \       'transparent_background': 1,
-  \       }
-  \     }
-  \   }
-  \ }
-
-let g:PaperColor_Theme_Options = {
-  \   'language': {
-  \     'python': {
-  \       'highlight_builtins' : 1
-  \     },
-  \     'cpp': {
-  \       'highlight_standard_library': 1
-  \     },
-  \     'c': {
-  \       'highlight_builtins' : 1
-  \     }
-  \   }
-  \ }
 
 """""""""""""""
 ""  Airline  ""
@@ -49,7 +24,7 @@ let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
 " Switch to your current theme
-let g:airline_theme = 'papercolor'
+let g:airline_theme = 'solarized'
 
 " Always show tabs
 set showtabline=2
