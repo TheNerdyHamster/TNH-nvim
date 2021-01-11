@@ -24,6 +24,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jackguo380/vim-lsp-cxx-highlight'
     Plug 'vim-syntastic/syntastic'
     Plug 'rhysd/vim-clang-format'
+    Plug 'LnL7/vim-nix'
     Plug 'posva/vim-vue'
     " Coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
