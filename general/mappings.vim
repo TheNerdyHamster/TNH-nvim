@@ -74,7 +74,7 @@ nnoremap <C-f> :NERDTreeFind<CR>
 """""""""""""""
 
 nnoremap <leader>pv :NERDTreeToggle<CR>
-nnoremap <leader>ps :Rg<SPACE>
+nnoremap <leader>ps :lua require('telescope.builtin').live_grep()<CR>
 
 """""""""""""""""
 ""  Which-Key  ""

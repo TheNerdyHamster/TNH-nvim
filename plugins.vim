@@ -15,7 +15,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     " Themes
-    Plug 'overcache/NeoSolarized'
+    Plug 'gruvbox-community/gruvbox'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
@@ -37,8 +37,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'tpope/vim-commentary'
     Plug 'vim-utils/vim-man'
-    Plug 'jremmen/vim-ripgrep'
     Plug 'mbbill/undotree'
+    Plug 'nvim-lua/popup.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
     " Tools
     Plug 'tpope/vim-fugitive'
     Plug 'preservim/nerdtree'
