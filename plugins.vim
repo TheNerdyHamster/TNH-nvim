@@ -23,6 +23,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'fatih/vim-go'
     Plug 'jackguo380/vim-lsp-cxx-highlight'
     Plug 'vim-syntastic/syntastic'
+    Plug 'vim-scripts/indentpython.vim'
     Plug 'rhysd/vim-clang-format'
     Plug 'LnL7/vim-nix'
     Plug 'posva/vim-vue'
