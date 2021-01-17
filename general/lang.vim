@@ -31,3 +31,27 @@ autocmd FileType c nmap <leader>pb  :<C-u>make build<CR>
 autocmd FileType c nmap <leader>pt  :<C-u>make test<CR>
 autocmd FileType c nmap <leader>pT  :<C-u>make test<CR>
 autocmd FileType c nmap <leader>pf  :<C-u>ClangFormat<CR>
+
+"""""""""
+"" Web ""
+"""""""""
+au BufNewFile,BufRead *.js, *.html, *.css
+    \ set tabstop=2
+    \ set softtabstop=2
+    \ set shiftwidth=2
+
+""""""""""""
+"" Python ""
+""""""""""""
+
+let python_highlight_all=1
+
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
