@@ -74,7 +74,7 @@ nnoremap <C-f> :NERDTreeFind<CR>
 """""""""""""""
 
 nnoremap <leader>pv :NERDTreeToggle<CR>
-nnoremap <leader>ps :lua require('telescope.builtin').live_grep()<CR>
+nnoremap <leader>ps :Rg<SPACE>
 
 """""""""""""""""
 ""  Which-Key  ""
@@ -114,7 +114,7 @@ let g:which_key_map['/'] = [ '<Plug>Commentary'  , 'comment' ]
 let g:which_key_map['b'] = [ '<C-W>s'                     , 'split below']
 let g:which_key_map['e'] = 'Focus Explorer'
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
-let g:which_key_map['r'] = [ ':source $MYWIMRC'           , 'Reload config']
+let g:which_key_map['r'] = [ ':source $MYVIMRC'           , 'Reload config']
 let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
 let g:which_key_map['u'] = 'Undo tree'
 
@@ -165,31 +165,6 @@ let g:which_key_map.p = {
   \ 'v' : 'explorer',
   \ 's' : 'search'
   \ }
-
-let g:which_key_map.w = {
-    \ 'name' : '+wiki',
-    \ ' ' : {
-        \ 'name' : '+diary',
-        \ 'i' : 'Update diary',
-        \ 'm' : 'Make diary for tommrow',
-        \ 't' : 'Open diary in new tab',
-        \ 'w' : 'Make diary for today',
-        \ 'y' : 'Make diary for yeasterday',
-    \     },
-    \ 'd' : 'delete wiki',
-    \ 'i' : 'Open diary of current wiki',
-    \ 'l' : {
-        \ 'name' : '+links',
-        \ 'l' : 'follow link',
-        \ 'n' : 'next link',
-        \ 'p' : 'prev link',
-    \     },
-    \ 'r' : 'rename wiki',
-    \ 's' : 'search & open wiki',
-    \ 't' : 'open default wiki in new tab',
-    \ 'w' : 'open default wiki',
-  \ }
-
 
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")

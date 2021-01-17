@@ -32,15 +32,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'liuchengxu/vim-which-key'
     " Utils
     Plug 'wakatime/vim-wakatime'
-    Plug 'vimwiki/vimwiki'
-    Plug 'mattn/calendar-vim'
     Plug 'norcalli/nvim-colorizer.lua'
+    Plug 'jremmen/vim-ripgrep'
     Plug 'tpope/vim-commentary'
     Plug 'vim-utils/vim-man'
     Plug 'mbbill/undotree'
-    Plug 'nvim-lua/popup.nvim'
-    Plug 'nvim-lua/plenary.nvim'
-    Plug 'nvim-telescope/telescope.nvim'
+    Plug 'tmhedberg/SimpylFold'
     " Tools
     Plug 'tpope/vim-fugitive'
     Plug 'preservim/nerdtree'
