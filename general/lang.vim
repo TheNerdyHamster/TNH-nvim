@@ -33,6 +33,14 @@ autocmd FileType c nmap <leader>pT  :<C-u>make test<CR>
 autocmd FileType c nmap <leader>pf  :<C-u>ClangFormat<CR>
 
 """""""""
+"" Nix ""
+"""""""""
+au BufNewFile,BufRead *.nix
+    \ set tabstop=2
+    \ set softtabstop=2
+    \ set shiftwidth=2
+
+"""""""""
 "" Web ""
 """""""""
 au BufNewFile,BufRead *.js, *.html, *.css
