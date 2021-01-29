@@ -29,6 +29,12 @@
                 "go"
             ]
         },
+        "nix": {
+            "command": "rnix-lsp",
+            "filetypes": [
+                "nix"
+            ],
+        },
         "ccls": {
             "command": "ccls",
             "args": [
