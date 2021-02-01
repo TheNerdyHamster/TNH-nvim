@@ -33,7 +33,7 @@
             "command": "rnix-lsp",
             "filetypes": [
                 "nix"
-            ],
+            ]
         },
         "ccls": {
             "command": "ccls",
