@@ -46,6 +46,7 @@ set scrolloff=10
 set signcolumn=yes
 set autowrite
 
+let g:loaded_node_provider=1
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 autocmd BufWritePre * %s/\s\+$//e       " Remove tralning spaces on save
 " You can't stop me
