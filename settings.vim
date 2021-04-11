@@ -1,9 +1,5 @@
-"""""""""""""""""
-""  Setttings  ""
-"""""""""""""""""
-
-syntax on                               " Enables syntax highlighing
-filetype plugin indent on               " Allow auto-indenting depending on file type
+syntax on
+filetype plugin indent on
 
 let g:mapleader = " "
 
@@ -35,6 +31,7 @@ set colorcolumn=120
 set showtabline=2
 set noshowmode
 set timeoutlen=500
+set cursorline
 set formatoptions-=cro
 set clipboard=unnamedplus
 set termguicolors
@@ -46,8 +43,5 @@ set scrolloff=10
 set signcolumn=yes
 set autowrite
 
-let g:loaded_node_provider=1
-au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
-autocmd BufWritePre * %s/\s\+$//e       " Remove tralning spaces on save
-" You can't stop me
-cmap w!! w !sudo tee %
+au! BufWritePost $MYVIMRC source %
+autocmd BufWritePre * %s/\s\+$//e
