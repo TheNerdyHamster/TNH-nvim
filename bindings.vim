@@ -44,3 +44,6 @@ nnoremap <leader>e :NERDTreeFocus<CR>
 " Project
 nnoremap <leader>pv :NERDTreeToggle<CR>
 nnoremap <leader>ps :Rg<SPACE>
+
+" Undotree
+nnoremap <leader>u :UndotreeShow<CR>
