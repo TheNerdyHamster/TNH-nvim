@@ -20,6 +20,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'liuchengxu/vim-which-key'
 
     " Semantic language support
+    Plug 'ycm-core/YouCompleteMe'
     Plug 'airblade/vim-gitgutter'
 
     " Syntactic language support
