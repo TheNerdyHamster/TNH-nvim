@@ -17,7 +17,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'mbbill/undotree'
-    Plug 'liuchengxu/vim-which-key'
 
     " Semantic language support
     Plug 'ycm-core/YouCompleteMe'
