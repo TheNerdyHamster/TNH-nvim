@@ -1,5 +1,10 @@
 " YouCompleteMe
-
+let g:ycm_language_server = [
+    \   {   'name': 'docker',
+    \       'filetypes': [ 'dockerfile' ],
+    \       'cmdline': [ 'docker-langserver', '--stdio' ]
+    \   },
+    \ ]
 " Linters
 let g:LanguageClient_serverCommands = {
     \ 'go': ['gopls']
