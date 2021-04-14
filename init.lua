@@ -13,6 +13,5 @@ require('keymaps')
 -- Plugins
 require('plugins')
 
-
 -- Configs
 require('config')
