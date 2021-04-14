@@ -23,13 +23,20 @@ return require('packer').startup(function()
         requires = {{ 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' }}
     }
 
-    -- LSP
+    -- LSP and Completion
     use { 'neovim/nvim-lspconfig' }
-    use { 'nvim-lua/completion-nvim' }
     use { 'kabouzeid/nvim-lspinstall' }
+    use { 'nvim-lua/completion-nvim' }
+
+    -- Snippets
+    use { 'honza/vim-snippets' }
+    use { 'SirVer/ultisnips' }
 
     -- Lua development
-    use { 'tjdevries/nlua.nvim' }
+    use { 
+        'tjdevries/nlua.nvim',
+        requires = {{ 'nvim-lua/plenary.nvim' }}
+    }
     use { 'euclidianAce/BetterLua.vim' }
 
     -- Vim dispatch
@@ -40,5 +47,8 @@ return require('packer').startup(function()
 
     -- Gui
     use { 'glepnir/dashboard-nvim' }
+
+    -- Utils/Extra
+    use { 'christoomey/vim-tmux-navigator' }
 
 end)
