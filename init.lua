@@ -13,5 +13,9 @@ require('keymaps')
 -- Plugins
 require('plugins')
 
+-- LSP
+require('lang')
+
 -- Configs
 require('config')
+
