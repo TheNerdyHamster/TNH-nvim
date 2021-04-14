@@ -40,6 +40,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/completion-nvim"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
+  },
   ["gruvbox-material"] = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/gruvbox-material"

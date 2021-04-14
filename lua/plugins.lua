@@ -38,4 +38,7 @@ return require('packer').startup(function()
     -- Vim fugitive
     use { 'tpope/vim-fugitive' }
 
+    -- Gui
+    use { 'glepnir/dashboard-nvim' }
+
 end)
