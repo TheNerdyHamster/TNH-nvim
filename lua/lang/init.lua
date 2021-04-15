@@ -75,7 +75,7 @@ capabilities.textDocument.codeAction = {
 capabilities.textDocument.completion.completionItem.snippetSupport = true;
 
 -- LSPs
-local servers = { "pyright", "rust_analyzer", "gopls" }
+local servers = { "yamlls", "pyright", "rust_analyzer", "gopls" }
 for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup { 
         capabilities = capabilities;

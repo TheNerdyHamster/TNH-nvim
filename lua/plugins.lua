@@ -32,6 +32,9 @@ return require('packer').startup(function()
     use { 'honza/vim-snippets' }
     use { 'SirVer/ultisnips' }
 
+    -- Syntax
+    use { 'nvim-treesitter/nvim-treesitter' }
+
     -- Lua development
     use { 
         'tjdevries/nlua.nvim',
