@@ -44,6 +44,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
   },
+  ["galaxyline.nvim"] = {
+    loaded = true,
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
+  },
   ["gruvbox-material"] = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/gruvbox-material"
@@ -63,6 +67,10 @@ _G.packer_plugins = {
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = false,

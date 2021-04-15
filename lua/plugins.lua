@@ -53,5 +53,10 @@ return require('packer').startup(function()
 
     -- Utils/Extra
     use { 'christoomey/vim-tmux-navigator' }
-
+    use {
+        'glepnir/galaxyline.nvim',
+        branch = 'main',
+        -- some optional icons
+        requires = {'kyazdani42/nvim-web-devicons', opt = true}
+    }
 end)
