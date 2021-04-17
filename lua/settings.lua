@@ -1,7 +1,7 @@
 local utils = require('utils')
 
 local cmd = vim.cmd
-local indent = 4
+local indent = 2
 
 cmd 'syntax enable'
 cmd 'filetype plugin indent on'
