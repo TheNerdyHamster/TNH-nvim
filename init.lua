@@ -15,4 +15,3 @@ require('lang')
 
 -- Configs
 require('config')
-

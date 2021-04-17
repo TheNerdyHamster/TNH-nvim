@@ -19,8 +19,6 @@ local on_attach = function(client, bufnr)
 
 end
 
--- To get builtin LSP running, do something like:
--- NOTE: This replaces the calls where you would have before done `require('nvim_lsp').sumneko_lua.setup()`
 require('nlua.lsp.nvim').setup(require('lspconfig'), {
   on_attach = on_attach,
 })
