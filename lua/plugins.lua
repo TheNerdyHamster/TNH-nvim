@@ -59,4 +59,9 @@ return require('packer').startup(function()
         -- some optional icons
         requires = {'kyazdani42/nvim-web-devicons', opt = true}
     }
+
+    use { 
+        'preservim/nerdtree',
+        requires = { 'ryanoasis/vim-devicons' }
+    }
 end)

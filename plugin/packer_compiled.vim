@@ -52,6 +52,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/gruvbox-material"
   },
+  nerdtree = {
+    loaded = true,
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/nerdtree"
+  },
   ["nlua.nvim"] = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/nlua.nvim"
@@ -92,6 +96,10 @@ _G.packer_plugins = {
   ultisnips = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/ultisnips"
+  },
+  ["vim-devicons"] = {
+    loaded = true,
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/vim-devicons"
   },
   ["vim-dispatch"] = {
     loaded = true,
