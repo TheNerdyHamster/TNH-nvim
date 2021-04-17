@@ -11,57 +11,57 @@ vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile' -- Auto compile when th
 
 return require('packer').startup(function()
 
-    -- Packer
-    use { 'wbthomason/packer.nvim', opt = true }
+  -- Packer
+  use { 'wbthomason/packer.nvim', opt = true }
 
-    -- Color Scheme
-    use { 'sainnhe/gruvbox-material' }
+  -- Color Scheme
+  use { 'sainnhe/gruvbox-material' }
 
-    -- Fuzzy finder
-    use {
-        'nvim-telescope/telescope.nvim',
-        requires = {{ 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' }}
-    }
+  -- Fuzzy finder
+  use {
+      'nvim-telescope/telescope.nvim',
+      requires = {{ 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' }}
+  }
 
-    -- LSP and Completion
-    use { 'neovim/nvim-lspconfig' }
-    use { 'kabouzeid/nvim-lspinstall' }
-    use { 'nvim-lua/completion-nvim' }
+  -- LSP and Completion
+  use { 'neovim/nvim-lspconfig' }
+  use { 'nvim-lua/completion-nvim' }
 
-    -- Snippets
-    use { 'honza/vim-snippets' }
-    use { 'SirVer/ultisnips' }
+  -- Snippets
+  use { 'honza/vim-snippets' }
+  use { 'SirVer/ultisnips' }
 
-    -- Syntax
-    use { 'nvim-treesitter/nvim-treesitter' }
+  -- Syntax
+  use { 'nvim-treesitter/nvim-treesitter' }
 
-    -- Lua development
-    use { 
-        'tjdevries/nlua.nvim',
-        requires = {{ 'nvim-lua/plenary.nvim' }}
-    }
-    use { 'euclidianAce/BetterLua.vim' }
+  -- Lua development
+  use { 
+      'tjdevries/nlua.nvim',
+      requires = {{ 'nvim-lua/plenary.nvim' }}
+  }
+  use { 'euclidianAce/BetterLua.vim' }
 
-    -- Vim dispatch
-    use { 'tpope/vim-dispatch' }
+  -- Vim dispatch
+  use { 'tpope/vim-dispatch' }
 
-    -- Vim fugitive
-    use { 'tpope/vim-fugitive' }
+  -- Vim fugitive
+  use { 'tpope/vim-fugitive' }
 
-    -- Gui
-    use { 'glepnir/dashboard-nvim' }
+  -- Gui
+  use { 'glepnir/dashboard-nvim' }
 
-    -- Utils/Extra
-    use { 'christoomey/vim-tmux-navigator' }
-    use {
-        'glepnir/galaxyline.nvim',
-        branch = 'main',
-        -- some optional icons
-        requires = {'kyazdani42/nvim-web-devicons', opt = true}
-    }
+  -- Utils/Extra
+  use { 'christoomey/vim-tmux-navigator' }
+  use { 'tpope/vim-commentary' }
+  use {
+      'glepnir/galaxyline.nvim',
+      branch = 'main',
+      -- some optional icons
+      requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  }
 
-    use { 
-        'preservim/nerdtree',
-        requires = { 'ryanoasis/vim-devicons' }
-    }
+  use { 
+      'preservim/nerdtree',
+      requires = { 'ryanoasis/vim-devicons' }
+  }
 end)
