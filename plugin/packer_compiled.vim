@@ -64,10 +64,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
   },
-  ["nvim-lspinstall"] = {
-    loaded = true,
-    path = "/home/leo/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
-  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
@@ -96,6 +92,10 @@ _G.packer_plugins = {
   ultisnips = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/ultisnips"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/vim-commentary"
   },
   ["vim-devicons"] = {
     loaded = true,
