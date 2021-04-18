@@ -56,10 +56,13 @@ return require('packer').startup(function()
   use {
       'glepnir/galaxyline.nvim',
       branch = 'main',
-      -- some optional icons
       requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
 
+  use {
+      'romgrk/barbar.nvim',
+      requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  }
   use { 
       'preservim/nerdtree',
       requires = { 'ryanoasis/vim-devicons' }
