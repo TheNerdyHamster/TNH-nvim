@@ -158,6 +158,17 @@ gls.right[2] = {
   },
 }
 
+-- gls.right[3] = {
+--   ViMode = {
+--     provider = function()
+--       return ' ' .. '  ' .. os.date('%H:%M') .. ' ' 
+--     end,
+--     highlight = {colors.background, colors.green},
+--     separator = " ",
+--     separator_highlight = {colors.lightBackground, colors.lightBackground}
+--   }
+-- }
+
 gls.right[3] = {
   LastElement = {
     provider = function() return icons.sep.left end,
