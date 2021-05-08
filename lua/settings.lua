@@ -21,5 +21,6 @@ utils.opt('o', 'wildmode', 'list:longest')
 utils.opt('w', 'number', true)
 utils.opt('o', 'relativenumber', true)
 utils.opt('o', 'clipboard', 'unnamed,unnamedplus')
+utils.opt('o', 'completeopt', 'menuone,noselect')
 
 cmd 'au TextYankPost * lua vim.highlight.on_yank {on_visual = false}'

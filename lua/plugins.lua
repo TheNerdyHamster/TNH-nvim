@@ -25,7 +25,7 @@ return require('packer').startup(function()
 
   -- LSP and Completion
   use { 'neovim/nvim-lspconfig' }
-  use { 'nvim-lua/completion-nvim' }
+  use { 'hrsh7th/nvim-compe' }
 
   -- Snippets
   use { 'honza/vim-snippets' }
@@ -67,4 +67,6 @@ return require('packer').startup(function()
       'kyazdani42/nvim-tree.lua',
       requires = { 'kyazdani42/nvim-web-devicons' }
   }
+
+  use { 'andweeb/presence.nvim' }
 end)
