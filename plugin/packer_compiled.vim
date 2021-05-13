@@ -91,6 +91,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/gruvbox-material"
   },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/lspsaga.nvim"
+  },
+  neoformat = {
+    loaded = true,
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/neoformat"
+  },
   ["nlua.nvim"] = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/nlua.nvim"

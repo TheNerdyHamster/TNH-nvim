@@ -26,6 +26,7 @@ return require('packer').startup(function()
   -- LSP and Completion
   use { 'neovim/nvim-lspconfig' }
   use { 'hrsh7th/nvim-compe' }
+  use { 'glepnir/lspsaga.nvim' }
 
   -- Snippets
   use { 'hrsh7th/vim-vsnip' }
