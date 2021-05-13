@@ -46,6 +46,9 @@ return require('packer').startup(function()
   }
   use { 'euclidianAce/BetterLua.vim' }
 
+  -- DB/Sql development
+  use { 'kristijanhusak/vim-dadbod-completion' }
+
   -- Vim dispatch
   use { 'tpope/vim-dispatch' }
 
