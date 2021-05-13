@@ -152,9 +152,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/vim-commentary"
   },
+  ["vim-dadbod"] = {
+    loaded = true,
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/vim-dadbod"
+  },
   ["vim-dadbod-completion"] = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/vim-dadbod-completion"
+  },
+  ["vim-dadbod-ui"] = {
+    loaded = true,
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/vim-dadbod-ui"
   },
   ["vim-dispatch"] = {
     loaded = true,
