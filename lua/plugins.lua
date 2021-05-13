@@ -28,6 +28,9 @@ return require('packer').startup(function()
   use { 'hrsh7th/nvim-compe' }
   use { 'glepnir/lspsaga.nvim' }
 
+  -- Formating
+  use { 'sbdchd/neoformat' }
+
   -- Snippets
   use { 'hrsh7th/vim-vsnip' }
   use { 'golang/vscode-go' }
