@@ -28,8 +28,8 @@ return require('packer').startup(function()
   use { 'hrsh7th/nvim-compe' }
 
   -- Snippets
-  use { 'honza/vim-snippets' }
-  use { 'SirVer/ultisnips' }
+  use { 'hrsh7th/vim-vsnip' }
+  use { 'golang/vscode-go' }
 
   -- Syntax
   use { 'nvim-treesitter/nvim-treesitter' }
