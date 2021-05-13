@@ -24,3 +24,20 @@ utils.opt('o', 'clipboard', 'unnamed,unnamedplus')
 utils.opt('o', 'completeopt', 'menuone,noselect')
 
 cmd 'au TextYankPost * lua vim.highlight.on_yank {on_visual = false}'
+
+-- Formatting
+vim.api.nvim_exec([[
+augroup auto_fmt
+    autocmd!
+    autocmd BufWritePre *.go,*.lua,*.sql undojoin | Neoformat
+aug END
+]], false)
+
+vim.api.nvim_exec([[
+    fun! TrimWhitespace()
+        let l:save = winsaveview()
+        keeppatterns %s/\s\+$//e
+        call winrestview(l:save)
+    endfun
+    autocmd FileType go,rust,html,sql autocmd BufWritePre <buffer> call TrimWhitespace()
+]], false)
