@@ -1,7 +1,7 @@
 local helper = require('lang.helpers')
 local nvim_lsp = require('lspconfig')
 
-nvim_lsp.rust_analyzer.setup {
+nvim_lsp.rust_analyzer.setup ({
   capabilities = helper.capabilities;
   on_attach = helper.on_attach;
   init_options = {
@@ -9,4 +9,4 @@ nvim_lsp.rust_analyzer.setup {
     suggestFromUnimportedLibraries = false,
     closingLabels = true,
   };
-}
+})
