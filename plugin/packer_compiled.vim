@@ -87,9 +87,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
   },
-  ["gruvbox-material"] = {
+  ["lsp_extensions.nvim"] = {
     loaded = true,
-    path = "/home/leo/.local/share/nvim/site/pack/packer/start/gruvbox-material"
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/lsp_extensions.nvim"
   },
   ["lspsaga.nvim"] = {
     loaded = true,
@@ -102,6 +102,10 @@ _G.packer_plugins = {
   ["nlua.nvim"] = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/nlua.nvim"
+  },
+  ["nord.nvim"] = {
+    loaded = true,
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/nord.nvim"
   },
   ["nvim-compe"] = {
     loaded = true,

@@ -15,7 +15,7 @@ return require('packer').startup(function()
   use { 'wbthomason/packer.nvim', opt = true }
 
   -- Color Scheme
-  use { 'sainnhe/gruvbox-material' }
+  use { 'shaunsingh/nord.nvim' }
 
   -- Fuzzy finder
   use {
