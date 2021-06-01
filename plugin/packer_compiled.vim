@@ -83,9 +83,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
   },
-  ["galaxyline.nvim"] = {
+  ["feline.nvim"] = {
     loaded = true,
-    path = "/home/leo/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/feline.nvim"
   },
   ["lsp_extensions.nvim"] = {
     loaded = true,
