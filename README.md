@@ -1,12 +1,17 @@
 # TNH-Nvim for the Hamsters!
 
+## Languages supported
+  - Golang
+  - Rust
+  - Lua
+  - PHP - Ongoing
 ## Packages
 
 ### Packer
 [Source](https://github.com/wbthomason/packer.nvim)    
 Status: Configuration
-### Gruvbox Material
-[Source](https://github.com/sainnhe/gruvbox-material)    
+### Nord
+[Source](https://github.com/shaunsingh/nord.nvim)    
 Status: Configuration
 ### Telescope
 [Source](https://github.com/nvim-telescope/telescope.nvim)    
@@ -62,8 +67,8 @@ Status: Configuration
 ### Vim Commentary
 [Source](https://github.com/tpope/vim-commentary)   
 Status: Configuration
-### Galaxyline
-[Source](https://github.com/glepnir/galaxyline.nvim)   
+### feline
+[Source](https://github.com/famiu/feline.nvim)   
 Status: Configuration
 ### Barbar
 [Source](https://github.com/romgrk/barbar.nvim)   
