@@ -87,6 +87,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/feline.nvim"
   },
+  firenvim = {
+    loaded = true,
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/firenvim"
+  },
   ["lsp_extensions.nvim"] = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/lsp_extensions.nvim"
@@ -187,6 +191,10 @@ _G.packer_plugins = {
   ["vscode-go"] = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/vscode-go"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/which-key.nvim"
   }
 }
 
