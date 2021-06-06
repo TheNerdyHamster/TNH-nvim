@@ -63,6 +63,7 @@ return require('packer').startup(function()
 
   -- Utils/Extra
   use { 'christoomey/vim-tmux-navigator' }
+  use { 'folke/which-key.nvim' }
   use { 'tpope/vim-commentary' }
   use {
       'famiu/feline.nvim',
@@ -80,4 +81,6 @@ return require('packer').startup(function()
   }
 
   use { 'andweeb/presence.nvim' }
+  use { 'glacambre/firenvim' }
+
 end)
