@@ -1,6 +1,6 @@
 require('config.colorscheme')
 require('config.nvim-compe')
-require('config.fugitive')
+require('config.neogit')
 require('config.telescope')
 require('config.treesitter')
 require('config.feline')

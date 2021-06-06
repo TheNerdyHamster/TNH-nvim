@@ -14,7 +14,7 @@ try
 lua << END
   local time
   local profile_info
-  local should_profile = false
+  local should_profile = true
   if should_profile then
     local hrtime = vim.loop.hrtime
     profile_info = {}
@@ -87,10 +87,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/feline.nvim"
   },
-  firenvim = {
-    loaded = true,
-    path = "/home/leo/.local/share/nvim/site/pack/packer/start/firenvim"
-  },
   ["lsp_extensions.nvim"] = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/lsp_extensions.nvim"
@@ -102,6 +98,10 @@ _G.packer_plugins = {
   neoformat = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/neoformat"
+  },
+  neogit = {
+    loaded = true,
+    path = "/home/leo/.local/share/nvim/site/pack/packer/start/neogit"
   },
   ["nlua.nvim"] = {
     loaded = true,
@@ -175,10 +175,6 @@ _G.packer_plugins = {
   ["vim-dispatch"] = {
     loaded = true,
     path = "/home/leo/.local/share/nvim/site/pack/packer/start/vim-dispatch"
-  },
-  ["vim-fugitive"] = {
-    loaded = true,
-    path = "/home/leo/.local/share/nvim/site/pack/packer/start/vim-fugitive"
   },
   ["vim-tmux-navigator"] = {
     loaded = true,

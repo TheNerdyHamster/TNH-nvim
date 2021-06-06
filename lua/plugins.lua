@@ -56,7 +56,10 @@ return require('packer').startup(function()
   use { 'tpope/vim-dispatch' }
 
   -- Vim fugitive
-  use { 'tpope/vim-fugitive' }
+  use { 
+        'TimUntersberger/neogit',
+        requires = {{'nvim-lua/plenary.nvim'}}
+  }
 
   -- Gui
   use { 'glepnir/dashboard-nvim' }
@@ -81,6 +84,5 @@ return require('packer').startup(function()
   }
 
   use { 'andweeb/presence.nvim' }
-  use { 'glacambre/firenvim' }
 
 end)
