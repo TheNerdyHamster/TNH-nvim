@@ -68,6 +68,7 @@ return require('packer').startup(function()
   use { 'christoomey/vim-tmux-navigator' }
   use { 'folke/which-key.nvim' }
   use { 'tpope/vim-commentary' }
+  use { 'windwp/nvim-autopairs' }
   use {
       'famiu/feline.nvim',
       branch = 'master',
