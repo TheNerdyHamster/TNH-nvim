@@ -5,6 +5,14 @@
   - Rust
   - Lua
   - PHP - Ongoing
+
+## Installation
+### Requierd packages
+- lua
+- ninja
+
+First run `:PackerInstall` after that run `:luafile ~/.local/share/nvim/site/pack/packer/start/nlua.nvim/scripts/download_sumneko.lua` to install packages and sumneko
+
 ## Packages
 
 ### Packer
@@ -79,6 +87,4 @@ Status: Configuration
 ### Presence
 [Source](https://github.com/andweeb/presence)   
 Status: Configuration
-
-## Installation
 
