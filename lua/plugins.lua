@@ -81,5 +81,7 @@ return require('packer').startup(function()
     }
 
     use {'andweeb/presence.nvim'}
+    
+    use {'vimwiki/vimwiki'}
 
 end)
