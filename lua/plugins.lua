@@ -39,17 +39,14 @@ return require('packer').startup(function()
     use {'golang/vscode-go'}
 
     -- Syntax
-    use {'nvim-treesitter/nvim-treesitter'}
+    use {'nvim-treesitter/nvim-treesitter',
+          run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+    }
     use {'p00f/nvim-ts-rainbow'}
 
     -- Lua development
     use {'tjdevries/nlua.nvim', requires = {{'nvim-lua/plenary.nvim'}}}
     use {'euclidianAce/BetterLua.vim'}
-
-    -- Database
-    use {'tpope/vim-dadbod'}
-    use {'kristijanhusak/vim-dadbod-ui'}
-    use {'kristijanhusak/vim-dadbod-completion'}
 
     -- Vim dispatch
     use {'tpope/vim-dispatch'}
