@@ -1,8 +1,6 @@
 local utils = require("utils")
 
-require("nvim-tree").setup({
-	auto_close = true,
-})
+require("nvim-tree").setup({})
 
 vim.g.nvim_tree_side = "right"
 vim.g.nvim_tree_auto_ignore_ft = { "dashboard" }
