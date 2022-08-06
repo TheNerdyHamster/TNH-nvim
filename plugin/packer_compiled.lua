@@ -119,11 +119,6 @@ _G.packer_plugins = {
     path = "/home/letnh/.local/share/nvim/site/pack/packer/start/neogit",
     url = "https://github.com/TimUntersberger/neogit"
   },
-  ["nlua.nvim"] = {
-    loaded = true,
-    path = "/home/letnh/.local/share/nvim/site/pack/packer/start/nlua.nvim",
-    url = "https://github.com/tjdevries/nlua.nvim"
-  },
   ["nord.nvim"] = {
     loaded = true,
     path = "/home/letnh/.local/share/nvim/site/pack/packer/start/nord.nvim",

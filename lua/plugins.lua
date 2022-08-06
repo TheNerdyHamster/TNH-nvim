@@ -48,7 +48,6 @@ return require("packer").startup(function()
 	use({ "p00f/nvim-ts-rainbow" })
 
 	-- Lua development
-	use({ "tjdevries/nlua.nvim", requires = { { "nvim-lua/plenary.nvim" } } })
 	use({ "euclidianAce/BetterLua.vim" })
 
 	-- Vim dispatch
