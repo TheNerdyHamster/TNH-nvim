@@ -79,10 +79,10 @@ _G.packer_plugins = {
     path = "/home/letnh/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
-  ["cmp-converntionalcommits"] = {
+  ["cmp-conventionalcommits"] = {
     loaded = true,
-    path = "/home/letnh/.local/share/nvim/site/pack/packer/start/cmp-converntionalcommits",
-    url = "https://github.com/hrsh7th/cmp-converntionalcommits"
+    path = "/home/letnh/.local/share/nvim/site/pack/packer/start/cmp-conventionalcommits",
+    url = "https://github.com/davidsierradz/cmp-conventionalcommits"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
