@@ -7,7 +7,7 @@ local utils = require('utils')
 utils.map('i', 'jk', '<Esc>')
 utils.map('i', 'kj', '<Esc>')
 
--- Arrow keys
+-- Disable Arrow keys
 utils.map('n', '<up>', '<nop>')
 utils.map('n', '<down>', '<nop>')
 utils.map('i', '<up>', '<nop>')
