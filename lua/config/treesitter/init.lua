@@ -1,5 +1,6 @@
 require'nvim-treesitter.configs'.setup {
-    ensure_installed = 'maintained',
+    ensure_installed = 'all',
+    ingore_install = { 'phpdoc' },
     highlight = {
         enable = true,
     },
