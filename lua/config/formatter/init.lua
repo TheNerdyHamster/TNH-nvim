@@ -2,15 +2,11 @@ local utils = require("utils")
 
 require("formatter").setup(
   {
+    logging = true,
+    log_level = vim.log.levels.WARN,
     filetype = {
       lua = {
-        function()
-          return {
-            exe = "luafmt",
-            args = {"--indent-count", 2, "--stdin"},
-            stdin = true
-          }
-        end
+        require('formatter.filetypes.lua').stylua,
       }
     }
   }
@@ -28,4 +24,3 @@ augroup END
 
 -- Bindings
 utils.map("n", "<Leader>x", "<cmd>Format<CR>")
--- }}}
