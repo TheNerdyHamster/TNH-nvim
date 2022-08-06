@@ -27,6 +27,7 @@ return require("packer").startup(function()
 	use({ "hrsh7th/cmp-nvim-lsp" })
 	use({ "hrsh7th/cmp-path" })
 	use({ "davidsierradz/cmp-conventionalcommits" })
+	use({ "hrsh7th/cmp-nvim-lsp-signature-help" })
 	-- use({ "glepnir/lspsaga.nvim" })
 
 	-- Formating
