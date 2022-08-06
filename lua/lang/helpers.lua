@@ -53,7 +53,7 @@ _M.on_attach = function(client, bufnr)
 	end
 end
 
-_M.capabilities = vim.lsp.protocol.make_client_capabilities()
+_M.capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
 -- require'snippets'.use_suggested_mappings(true) -- for snippets.vim
 
 -- Code actions

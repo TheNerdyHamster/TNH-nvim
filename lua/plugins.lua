@@ -23,7 +23,10 @@ return require("packer").startup(function()
 
 	-- LSP and Completion
 	use({ "neovim/nvim-lspconfig" })
-	use({ "hrsh7th/nvim-compe" })
+	use({ "hrsh7th/nvim-cmp" })
+	use({ "hrsh7th/cmp-nvim-lsp" })
+	use({ "hrsh7th/cmp-path" })
+	use({ "hrsh7th/cmp-converntionalcommits" })
 	-- use({ "glepnir/lspsaga.nvim" })
 
 	-- Formating
@@ -32,6 +35,7 @@ return require("packer").startup(function()
 
 	-- Snippets
 	use({ "hrsh7th/vim-vsnip" })
+	use({ "hrsh7th/cmp-vsnip" })
 	use({ "golang/vscode-go" })
 
 	-- Syntax

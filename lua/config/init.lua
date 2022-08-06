@@ -1,5 +1,5 @@
 require("config.colorscheme")
-require("config.nvim-compe")
+require("config.cmp")
 require("config.neogit")
 require("config.formatter")
 require("config.autopairs")
