@@ -1,6 +1,6 @@
 local neogit = require("neogit")
 local utils = require("utils")
-local group = vim.api.nvim_create_augroup("NeogitCustomEvents", { clear = true })
+-- local group = vim.api.nvim_create_augroup("NeogitCustomEvents", { clear = true })
 
 -- Neogit setup
 neogit.setup({
@@ -13,8 +13,8 @@ utils.map("n", "<Leader>gs", "<cmd>Neogit<CR>")
 utils.map("n", "<Leader>gc", "<cmd>Neogit commit<CR>")
 
 -- Custom autocommands
-vim.api.nvim_create_autocmd("User", {
-	pattern = "NeogitPushComplete",
-	group = group,
-	callback = require("neogit").close,
-})
+-- vim.api.nvim_create_autocmd("User", {
+-- 	pattern = "NeogitPushComplete",
+-- 	group = group,
+-- 	callback = require("neogit").close,
+-- })
