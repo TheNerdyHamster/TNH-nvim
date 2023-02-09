@@ -61,24 +61,25 @@ return require("packer").startup(function()
 	-- Gui
 	use({ "glepnir/dashboard-nvim" })
 
+	use({ "nvim-tree/nvim-web-devicons" })
 	-- Utils/Extra
 	use({ "christoomey/vim-tmux-navigator" })
 	use({ "folke/which-key.nvim" })
 	use({ "tpope/vim-commentary" })
 	use({ "windwp/nvim-autopairs" })
 	use({
-		"famiu/feline.nvim",
+		"feline-nvim/feline.nvim",
 		branch = "master",
-		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+		-- requires = { "kyazdani42/nvim-web-devicons", opt = true },
 	})
 
 	use({
 		"romgrk/barbar.nvim",
-		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+		requires = { "nvim-web-devicons", opt = true },
 	})
 	use({
-		"kyazdani42/nvim-tree.lua",
-		requires = { "kyazdani42/nvim-web-devicons" },
+		"nvim-tree/nvim-tree.lua",
+		requires = { "nvim-web-devicons" },
 	})
 
 	use({ "andweeb/presence.nvim" })
