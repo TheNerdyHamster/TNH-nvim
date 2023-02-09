@@ -195,6 +195,11 @@ _G.packer_plugins = {
     path = "/home/letnh/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
   },
+  ["vim-crystal"] = {
+    loaded = true,
+    path = "/home/letnh/.local/share/nvim/site/pack/packer/start/vim-crystal",
+    url = "https://github.com/vim-crystal/vim-crystal"
+  },
   ["vim-dispatch"] = {
     loaded = true,
     path = "/home/letnh/.local/share/nvim/site/pack/packer/start/vim-dispatch",
