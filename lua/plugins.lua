@@ -68,10 +68,14 @@ return require("packer").startup(function()
 	use({ "tpope/vim-commentary" })
 	use({ "windwp/nvim-autopairs" })
 	use({
-		"feline-nvim/feline.nvim",
-		branch = "master",
-		-- requires = { "kyazdani42/nvim-web-devicons", opt = true },
+		"nvim-lualine/lualine.nvim",
+		requires = { "nvim-web-devicons", opt = true },
 	})
+	-- use({
+	-- 	"feline-nvim/feline.nvim",
+	-- 	branch = "master",
+	-- 	requires = { "kyazdani42/nvim-web-devicons", opt = true },
+	-- })
 
 	use({
 		"romgrk/barbar.nvim",
