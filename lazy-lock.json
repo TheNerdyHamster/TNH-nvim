@@ -1,0 +1,6 @@
+{
+  "astrotheme": { "branch": "main", "commit": "1aebd39972893a55641df5a8bda3e2dbaf6ac0ce" },
+  "lazy.nvim": { "branch": "main", "commit": "e42fccc3cda70266e0841c5126de2c23e8982800" },
+  "nvim-spectre": { "branch": "master", "commit": "696cff781a4a7ecc91549736835e2acbd00fe859" },
+  "plenary.nvim": { "branch": "master", "commit": "50012918b2fc8357b87cff2a7f7f0446e47da174" }
+}
