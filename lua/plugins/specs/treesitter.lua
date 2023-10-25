@@ -1,7 +1,7 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
-    ensure_installed = { "lua", "query", "yaml", "json" },
+    ensure_installed = { "lua", "query", "yaml", "json", "python", "sql", "puppet", "hcl", "terraform" },
     auto_install = true,
     highlight = {
       enable = true
