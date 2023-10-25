@@ -5,11 +5,17 @@ cmd("syntax enable")
 cmd("filetype plugin indent on")
 cmd("au TextYankPost * lua vim.highlight.on_yank {on_visual = false}")
 
+-- Disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- Clipboard
 vim.schedule(function()
   o.clipboard = "unnamedplus"
   o.undofile = true
 end)
+
+o.termguicolors = true 
 
 o.shiftwidth = 2
 o.tabstop = 2
