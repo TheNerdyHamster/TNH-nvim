@@ -8,6 +8,12 @@ return {
     "MunifTanjim/nui.nvim",
   },
   keys = {
+    {
+      "<leader>ft", "<cmd>Neotree toggle<CR>", desc = "NeoTree",
+    },
+    {
+      "<C-n>", "<cmd>Neotree toggle<CR>", desc = "NeoTree",
+    },
     { 
       "<leader>fe", 
       function()
