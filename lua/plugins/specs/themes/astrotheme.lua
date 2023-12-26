@@ -1,5 +1,6 @@
 return {
-  "Astronvim/astrotheme",
+  "AstroNvim/astrotheme",
+  commit = "1aebd39",
   opts = function()
     local C = require("astrotheme.colors")
 

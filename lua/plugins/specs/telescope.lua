@@ -65,6 +65,16 @@ return {
         "<cmd>Telescope help_tags<CR>", 
         desc = "telescope: help_tags" 
       },
+      {
+        "<leader>gc",
+        "<cmd>Telescope git_commits<CR>",
+        desc = "telescope: commits"
+      },
+      {
+        "<leader>gs",
+        "<cmd>Telescope git_status<CR>",
+        desc = "telescope: status"
+      }
     },
     cmd = {
       "Telescope",
