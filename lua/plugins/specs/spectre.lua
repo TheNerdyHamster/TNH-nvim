@@ -1,10 +1,11 @@
 return {
   "nvim-pack/nvim-spectre",
-  opts = true,
+  cmd = "Spectre",
+  opts = { open_cmd = "noswapfile vnew" },
   dependencies = {
     "nvim-lua/plenary.nvim",
   },
   keys = {
-    { "<leader>s", "<Cmd>lua require('spectre').toggle()<CR>", desc = "Spectre: Toggle" },
+    { "<leader>ss", "<Cmd>lua require('spectre').toggle()<CR>", desc = "Spectre: Toggle" },
   },
 }
