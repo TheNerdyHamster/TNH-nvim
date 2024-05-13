@@ -1,11 +1,19 @@
 return {
 	"vimwiki/vimwiki",
+  event = "VeryLazy",
 	init = function()
 		-- Default directory, syntax and file type,
 		-- symbols for spaces, auto re-index tags db
 		vim.g.vimwiki_list = {
 			{
-				path = "~/Notes/VimWiki",
+				path = "~/Documents/work/wiki",
+				syntax = "markdown",
+				ext = ".md",
+				links_space_char = "_",
+				auto_tags = 1,
+			},
+			{
+				path = "~/Documents/personal/wiki",
 				syntax = "markdown",
 				ext = ".md",
 				links_space_char = "_",
