@@ -3,11 +3,13 @@ local M = {}
 M.UI = {
   colorscheme = {
     -- name = "nord",
-    name = "astrotheme",
+    -- name = "astrotheme",
+    name = "tokyonight",
 
     themes = {
       -- { import = "plugins.specs.themes.nord" },
-      { import = "plugins.specs.themes.astrotheme" },
+      -- { import = "plugins.specs.themes.astrotheme" },
+      { import = "plugins.specs.themes.tokyonight" },
     }
   }
 }
