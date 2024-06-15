@@ -71,6 +71,7 @@ return {
                 { name = 'luasnip' }, -- For luasnip users.
             }, {
                 { name = 'buffer' },
+                { name = 'path' },
             })
         })
 
@@ -85,5 +86,15 @@ return {
                 prefix = "",
             },
         })
+
+        vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format)
+        vim.keymap.set("n", "<leader>ca", function()
+            vim.lsp.buf.code_action({
+                filter = function(action)
+                    return action.isPreferred
+                end,
+                apply = true,
+            })
+        end)
     end
 }
