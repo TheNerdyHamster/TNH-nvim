@@ -1,6 +1,10 @@
 vim.opt.guicursor = ""
 vim.opt.mouse = ""
 
+-- Netrw
+vim.g.netrw_keepdir = 1
+vim.g.netrw_banner = 0
+
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
