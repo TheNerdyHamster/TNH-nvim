@@ -1,7 +1,7 @@
 local M = {}
 
 M.setup = function()
-  require("nvim-treesitter").setup {
+  require("nvim-treesitter").setup({
     ensure_install = {
       "c",
       "lua",
@@ -24,8 +24,8 @@ M.setup = function()
         end
       end,
       additional_vim_regex_highlighting = false,
-    }
-  }
+    },
+  })
 end
 
 return M

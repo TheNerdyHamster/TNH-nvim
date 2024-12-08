@@ -12,5 +12,5 @@ return {
     config = function()
       require("tnh.completion")
     end,
-  }
+  },
 }

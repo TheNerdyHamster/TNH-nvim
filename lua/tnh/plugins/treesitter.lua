@@ -5,5 +5,5 @@ return {
     config = function()
       require("tnh.treesitter").setup()
     end,
-  }
+  },
 }

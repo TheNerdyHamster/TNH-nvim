@@ -52,7 +52,7 @@ set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 set("n", "<leader>X", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- Toggle hlsearch if active otehrwise just "enter"
-set("n", "<CR>", function ()
+set("n", "<CR>", function()
   if vim.v.hlsearch == 1 then
     vim.cmd.nohl()
     return ""

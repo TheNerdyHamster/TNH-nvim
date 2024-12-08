@@ -5,12 +5,12 @@ require("tnh.snippets")
 local opt = vim.opt
 
 opt.completeopt = { "menu", "menuone", "noselect" }
-opt.shortmess:append "c"
+opt.shortmess:append("c")
 
 local lspkind = require("lspkind")
-lspkind.init{}
+lspkind.init({})
 
-local kind_formatter = lspkind.cmp_format {
+local kind_formatter = lspkind.cmp_format({
   mode = "symbol_text",
   menu = {
     buffer = "[buf]",
@@ -19,11 +19,11 @@ local kind_formatter = lspkind.cmp_format {
     path = "[path]",
     luasnip = "[snip]",
   },
-}
+})
 
 local cmp = require("cmp")
 
-cmp.setup{
+cmp.setup({
   sources = {
     { name = "nvim_lsp" },
     { name = "path" },
@@ -31,13 +31,13 @@ cmp.setup{
     { name = "luasnip" },
   },
   mapping = {
-    ["<C-n>"] = cmp.mapping.select_next_item{ behavior = cmp.SelectBehavior.Insert },
-    ["<C-p>"] = cmp.mapping.select_prev_item{ behavior = cmp.SelectBehavior.Insert },
+    ["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
+    ["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
     ["<C-y>"] = cmp.mapping(
-      cmp.mapping.confirm{
+      cmp.mapping.confirm({
         behavior = cmp.ConfirmBehavior.Insert,
         select = true,
-      },
+      }),
       { "i", "c" }
     ),
   },
@@ -56,5 +56,5 @@ cmp.setup{
 
       return vim_item
     end,
-  }
-}
+  },
+})
