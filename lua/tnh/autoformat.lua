@@ -20,11 +20,19 @@ M.setup = function()
     callback = function(args)
       require("conform").format({
         bufnr = args.buf,
-        lsp_fallback = false,
-        quiet = true,
+        lsp_fallback = true,
+        quiet = false,
       })
     end,
   })
+
+  vim.keymap.set({ "n", "v" }, "<leader>cf", function()
+    conform.format({
+      lsp_fallback = true,
+      quite = false,
+      timeout_ms = 500,
+    })
+  end, { desc = "Format file or range" })
 end
 
 return M
