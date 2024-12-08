@@ -30,7 +30,7 @@ return {
         local default = mod.default_config
         local keys = vim.split(key, ".", { plain = true })
         while #keys > 0 do
-          local item table.remove(keys, 1)
+          local item = table.remove(keys, 1)
           default = default[item]
         end
 
@@ -122,7 +122,7 @@ return {
       }
 
       vim.list_extend(ensure_installed, servers_to_install)
-      require("mason-tool-installer").setup{ ensure_installed = ensure_installed }
+      require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
       for name, config in pairs(servers) do
         if config == true then
@@ -180,17 +180,19 @@ return {
         end,
       })
 
+      require("tnh.autoformat").setup()
+
       require("lsp_lines").setup()
-      vim.diagnostic.config{ virtual_text = true, virtual_lines = false }
+      vim.diagnostic.config({ virtual_text = true, virtual_lines = false })
 
       set("", "<leader>l", function()
         local config = vim.diagnostic.config() or {}
         if config.virtual_text then
-          vim.diagnostic.config{ virtual_text = false, virtual_lines = true }
+          vim.diagnostic.config({ virtual_text = false, virtual_lines = true })
         else
-          vim.diagnostic.config{ virtual_text = true, virtual_lines = false }
+          vim.diagnostic.config({ virtual_text = true, virtual_lines = false })
         end
       end, { desc = "Toggle lsp_lines" })
     end,
-  }
+  },
 }
