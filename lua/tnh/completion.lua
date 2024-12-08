@@ -1,5 +1,7 @@
 -- tnh/completion.lua
 
+require("tnh.snippets")
+
 local opt = vim.opt
 
 opt.completeopt = { "menu", "menuone", "noselect" }
@@ -26,6 +28,7 @@ cmp.setup{
     { name = "nvim_lsp" },
     { name = "path" },
     { name = "buffer" },
+    { name = "luasnip" },
   },
   mapping = {
     ["<C-n>"] = cmp.mapping.select_next_item{ behavior = cmp.SelectBehavior.Insert },
@@ -38,7 +41,7 @@ cmp.setup{
       { "i", "c" }
     ),
   },
-  
+
   snippet = {
     expand = function(args)
       vim.snippet.expand(args.body)
