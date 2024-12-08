@@ -155,7 +155,8 @@ return {
           set("n", "gd", builtin.lsp_definitions, { buffer = 0 })
           set("n", "gl", builtin.lsp_references, { buffer = 0 })
           set("n", "gD", vim.lsp.buf.declaration, { buffer = 0 })
-          set("n", "gT", vim.lsp.buf.type_definition, { buffer = 0 })
+          -- TODO: This conflics with neovim tabs
+          --set("n", "gT", vim.lsp.buf.type_definition, { buffer = 0 })
           set("n", "K", vim.lsp.buf.hover, { buffer = 0 })
 
           set("n", "<leader>cr", vim.lsp.buf.rename, { buffer = 0 })

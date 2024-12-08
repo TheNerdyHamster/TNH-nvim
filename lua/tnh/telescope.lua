@@ -27,6 +27,7 @@ set("n", "<leader>ft", function()
   return builtin.git_files { cwd = vim.fn.expand "%:h" }
 end)
 set("n", "<leader>fh", builtin.help_tags)
+set("n", "<leader>fk", builtin.keymaps)
 set("n", "<leader>fb", builtin.buffers)
 set("n", "<leader>f/", builtin.current_buffer_fuzzy_find)
 set("n", "<leader>ps", function()
