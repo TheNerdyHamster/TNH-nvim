@@ -82,6 +82,17 @@ return {
 
         biome = true,
 
+        sourcekit = {
+          manual_install = true,
+          capabilities = {
+            workspace = {
+              didChangeWatchedFiles = {
+                dynamicRegistration = true,
+              },
+            },
+          },
+        },
+
         jsonls = {
           server_capabilities = {
             documentFormattingProvider = false,

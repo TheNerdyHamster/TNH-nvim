@@ -12,6 +12,7 @@ M.setup = function()
       "json",
       "rust",
       "bash",
+      "swift",
     },
     auto_install = false,
     highlight = {
