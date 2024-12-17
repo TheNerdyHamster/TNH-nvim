@@ -42,8 +42,9 @@ set("n", "n", "nzzzv")
 set("n", "N", "Nzzzv")
 
 -- -- Quick fix menu
--- set("n", "<C-k>", "<cmd>cnext<CR>zz")
--- set("n", "<C-j>", "<cmd>cprev<CR>zz")
+set("n", "<M-j>", "<cmd>cnext<CR>zz")
+set("n", "<M-k>", "<cmd>cprev<CR>zz")
+set("n", "<M-l>", "<cmd>copen<CR>zz")
 -- set("n", "<leader>k", "<cmd>lnext<CR>zz")
 -- set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
@@ -65,5 +66,4 @@ end, { expr = true })
 set("n", "<M-,>", "<c-w>5<")
 set("n", "<M-.>", "<c-w>5>")
 set("n", "<M-t>", "<c-w>+")
--- TODO: Find out why this dosnt work correctly
 set("n", "<M-s>", "<c-w>-")
