@@ -34,3 +34,5 @@ opt.updatetime = 50
 opt.colorcolumn = "120"
 
 opt.clipboard = "unnamedplus"
+
+opt.conceallevel = 1
