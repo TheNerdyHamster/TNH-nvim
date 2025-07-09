@@ -2,7 +2,7 @@ vim.api.nvim_create_autocmd({ "TermOpen", "BufEnter" }, {
   group = vim.api.nvim_create_augroup("tnh-term-open", { clear = true }),
   callback = function()
     if vim.opt.buftype:get() == "terminal" then
-      print("Entering terminal")
+      vim.cmd("tnoremap <Space> <Space>")
       vim.cmd(":startinsert")
       vim.opt.number = false
       vim.opt.relativenumber = false
@@ -25,6 +25,7 @@ vim.keymap.set("n", "<space>oS", function()
 end)
 
 vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>")
+vim.keymap.set("t", "jk", "<c-\\><c-n>")
 
 local state = {
   floating = {
@@ -69,10 +70,13 @@ local function toggle_terminal()
     if vim.bo[state.floating.buf].buftype ~= "terminal" then
       vim.cmd.terminal()
     end
+
+    vim.cmd(":startinsert")
   else
     vim.api.nvim_win_hide(state.floating.win)
   end
 end
 
 vim.api.nvim_create_user_command("Fterm", toggle_terminal, {})
-vim.keymap.set({ "n", "t" }, "<space>ot", toggle_terminal)
+vim.keymap.set({ "n" }, "<space>ot", toggle_terminal)
+vim.keymap.set({ "t" }, "<C-q>", toggle_terminal)
