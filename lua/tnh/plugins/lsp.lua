@@ -25,6 +25,7 @@ return {
       "b0o/SchemaStore.nvim",
     },
     config = function()
+      ---@diagnostic disable-next-line: unused-function, unused-local
       local extend = function(name, key, values)
         local mod = require(string.format("lspconfig.configs.%s", name))
         local default = mod.default_config
@@ -81,6 +82,8 @@ return {
         pyright = true,
 
         biome = true,
+
+        terraformls = true,
 
         sourcekit = {
           manual_install = true,

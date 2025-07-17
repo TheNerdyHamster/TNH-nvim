@@ -6,6 +6,7 @@ M.setup = function()
     formatters_by_ft = {
       lua = { "stylua" },
       go = { "goimports", "gofmt" },
+      terraform = { "terraform_fmt" },
     },
   })
 
