@@ -35,7 +35,7 @@ cmp.setup({
     ["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
     ["<C-y>"] = cmp.mapping(
       cmp.mapping.confirm({
-        behavior = cmp.ConfirmBehavior.Insert,
+        behavior = cmp.ConfirmBehavior.Replace,
         select = true,
       }),
       { "i", "c" }

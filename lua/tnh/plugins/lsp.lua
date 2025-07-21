@@ -61,6 +61,7 @@ return {
         gopls = {
           settings = {
             gopls = {
+              usePlaceholders = true,
               hints = {
                 assignVariableTypes = true,
                 compositeLiteralFields = true,

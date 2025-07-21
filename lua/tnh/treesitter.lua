@@ -1,7 +1,6 @@
 local M = {}
 
 M.setup = function()
-  print("Setting up treesitter")
   ---@diagnostic disable-next-line: redundant-parameter
   require("nvim-treesitter").setup({
     ensure_install = {
