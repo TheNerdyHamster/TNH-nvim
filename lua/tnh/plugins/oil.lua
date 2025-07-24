@@ -7,10 +7,24 @@ return {
       "nvim-tree/nvim-web-devicons",
     },
     config = function()
+      local detail = false
       require("oil").setup({
         columns = { "icon" },
         view_options = {
           show_hidden = true,
+        },
+        keymaps = {
+          ["gd"] = {
+            desc = "Toggle file details",
+            callback = function()
+              detail = not detail
+              if detail then
+                require("oil").set_columns({ "icon", "permissions", "size", "mtime" })
+              else
+                require("oil").set_columns({ "icon" })
+              end
+            end,
+          },
         },
       })
 
